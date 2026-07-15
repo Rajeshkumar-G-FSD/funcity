@@ -49,12 +49,12 @@ import heroImageViewPoint from "./assets/images/jr_mist_valley_view_point.webp";
 import heroImageViewpointAlt from "./assets/images/jr_mist_valley_viewpoint_alt.webp";
 
 const HERO_IMAGES = [
-  { src: heroImageBackside, alt: "J R Mist Valley Inn exterior" },
-  { src: heroImageBackstay, alt: "J R Mist Valley Inn stay" },
-  { src: heroImageBalcony, alt: "J R Mist Valley Inn balcony" },
-  { src: heroImageRoom, alt: "J R Mist Valley Inn room" },
-  { src: heroImageViewPoint, alt: "J R Mist Valley Inn view point" },
-  { src: heroImageViewpointAlt, alt: "J R Mist Valley Inn scenic viewpoint" }
+  { src: heroImageBackside, alt: "Fun City Inn exterior" },
+  { src: heroImageBackstay, alt: "Fun City Inn stay" },
+  { src: heroImageBalcony, alt: "Fun City Inn balcony" },
+  { src: heroImageRoom, alt: "Fun City Inn room" },
+  { src: heroImageViewPoint, alt: "Fun City Inn view point" },
+  { src: heroImageViewpointAlt, alt: "Fun City Inn scenic viewpoint" }
 ];
 
 export default function App() {
@@ -201,13 +201,13 @@ export default function App() {
               ))}
             </nav>
 
-            {/* Centered Brand Logo */}
-            <div className="flex flex-col items-center justify-center text-center py-1 group cursor-pointer" onClick={() => scrollToSection("home")}>
+            {/* Centered Brand Logo (Desktop only — mobile has its own bar below) */}
+            <div className="hidden md:flex flex-col items-center justify-center text-center py-1 group cursor-pointer" onClick={() => scrollToSection("home")}>
               <div className="flex items-center gap-3">
                 {/* Gold Crest Ornament Left */}
                 <div className="hidden lg:block w-8 h-[1px] bg-gradient-to-r from-transparent to-gold"></div>
-                <div className="text-gold text-2xl tracking-[0.2em] font-serif font-light flex items-center justify-center gap-1">
-                  J R MIST VALLEY INN
+                <div className="text-gold text-2xl tracking-[0.2em] font-serif font-light flex items-center justify-center gap-1 whitespace-nowrap">
+                  FUN CITY INN
                 </div>
                 {/* Gold Crest Ornament Right */}
                 <div className="hidden lg:block w-8 h-[1px] bg-gradient-to-l from-transparent to-gold"></div>
@@ -243,11 +243,11 @@ export default function App() {
             </nav>
 
             {/* Mobile Menu Button */}
-            <div className="flex md:hidden w-full justify-between items-center px-2">
-              <div className="text-gold tracking-[0.2em] font-serif text-lg">J R MIST VALLEY INN</div>
+            <div className="flex md:hidden w-full justify-between items-center gap-2 px-2">
+              <div className="text-gold tracking-[0.15em] font-serif text-sm sm:text-lg truncate min-w-0">FUN CITY INN</div>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 text-neutral-400 hover:text-gold transition-colors focus:outline-none"
+                className="p-2 text-neutral-400 hover:text-gold transition-colors focus:outline-none shrink-0"
                 aria-label="Toggle menu"
               >
                 <Menu className="w-6 h-6" />
@@ -316,6 +316,23 @@ export default function App() {
               aria-label={`Go to hero image ${idx + 1}`}
             ></button>
           ))}
+        </div>
+
+        {/* Social Media Icons: right side of hero */}
+        <div className="hidden sm:flex absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center gap-4">
+          <a href="#" className="p-2.5 border border-white/30 rounded-full text-white/80 hover:text-gold hover:border-gold transition-all backdrop-blur-sm" aria-label="Facebook">
+            <Facebook className="w-4 h-4" />
+          </a>
+          <a href="#" className="p-2.5 border border-white/30 rounded-full text-white/80 hover:text-gold hover:border-gold transition-all backdrop-blur-sm" aria-label="Twitter">
+            <Twitter className="w-4 h-4" />
+          </a>
+          <a href="#" className="p-2.5 border border-white/30 rounded-full text-white/80 hover:text-gold hover:border-gold transition-all backdrop-blur-sm" aria-label="LinkedIn">
+            <Linkedin className="w-4 h-4" />
+          </a>
+          <a href="#" className="p-2.5 border border-white/30 rounded-full text-white/80 hover:text-gold hover:border-gold transition-all backdrop-blur-sm" aria-label="Instagram">
+            <Instagram className="w-4 h-4" />
+          </a>
+          <div className="w-[1px] h-16 bg-white/30"></div>
         </div>
 
         {/* Booking Search Widget: bottom of hero */}
@@ -461,7 +478,7 @@ export default function App() {
                 <div className="overflow-hidden brush-edge-top brush-edge-bottom bg-neutral-100 rounded-sm">
                   <img
                     src={heroImageBackside}
-                    alt="J R Mist Valley Inn exterior"
+                    alt="Fun City Inn exterior"
                     className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
@@ -569,7 +586,7 @@ export default function App() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroImageViewPoint}
-            alt="J R Mist Valley Inn view point"
+            alt="Fun City Inn view point"
             className="w-full h-full object-cover brightness-50"
             referrerPolicy="no-referrer"
           />
@@ -758,7 +775,7 @@ export default function App() {
             <div className="flex flex-col items-center justify-center text-center p-6 border border-neutral-900 bg-neutral-950/50 space-y-6">
               <div className="text-center">
                 <div className="text-gold text-2xl tracking-[0.25em] font-serif font-light">
-                  J R MIST VALLEY INN
+                  FUN CITY INN
                 </div>
               </div>
 
@@ -771,7 +788,7 @@ export default function App() {
                 <div className="flex items-start gap-2.5">
                   <MapPin className="w-3.5 h-3.5 text-gold shrink-0 mt-0.5" />
                   <span className="text-neutral-400 font-sans font-light text-xs leading-relaxed">
-                    J R Mist Valley Inn, Coonoor Rd, Lovedale, Ooty, Tamil Nadu 643215
+                    Fun City Inn, Coonoor Rd, Lovedale, Ooty, Tamil Nadu 643215
                   </span>
                 </div>
                 <div className="flex items-center gap-2.5">
