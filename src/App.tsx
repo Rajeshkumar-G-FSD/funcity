@@ -41,12 +41,12 @@ import { SERVICES_DATA, TESTIMONIALS_DATA, RESORT_FACTS, Service } from "./data"
 import testimonialUserImage from "./assets/images/testimonial_user_1784117981837.jpg";
 
 // Hero section images
-import heroImageBackside from "./assets/images/funcity_backside.webp";
-import heroImageBackstay from "./assets/images/funcity_backstay.webp";
-import heroImageBalcony from "./assets/images/funcity_balcony.webp";
-import heroImageRoom from "./assets/images/funcity_room.webp";
-import heroImageViewPoint from "./assets/images/funcity_view_point.webp";
-import heroImageViewpointAlt from "./assets/images/functiy_viewpoint.webp";
+import heroImageBackside from "./assets/images/jr_mist_valley_backside.webp";
+import heroImageBackstay from "./assets/images/jr_mist_valley_backstay.webp";
+import heroImageBalcony from "./assets/images/jr_mist_valley_balcony.webp";
+import heroImageRoom from "./assets/images/jr_mist_valley_room.webp";
+import heroImageViewPoint from "./assets/images/jr_mist_valley_view_point.webp";
+import heroImageViewpointAlt from "./assets/images/jr_mist_valley_viewpoint_alt.webp";
 
 const HERO_IMAGES = [
   { src: heroImageBackside, alt: "J R Mist Valley Inn exterior" },
