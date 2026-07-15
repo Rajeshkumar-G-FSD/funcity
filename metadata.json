@@ -1,0 +1,6 @@
+{
+  "name": "Mystique Stay Resort",
+  "description": "A luxury concierge and premium resort services agency in Ibiza, specializing in VIP rentals, yacht charters, and curated island experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

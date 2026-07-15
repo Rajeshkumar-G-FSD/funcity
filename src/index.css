@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --color-gold-light: #dfcb9f;
+  --color-gold: #c5a880;
+  --color-gold-dark: #a98d63;
+  --color-charcoal: #222222;
+}
+
+/* Custom styles for brush stroke dividers and ornate elements */
+.brush-edge-top {
+  clip-path: polygon(0 15px, 5% 5px, 10% 20px, 15% 3px, 20% 12px, 25% 4px, 30% 18px, 35% 2px, 40% 14px, 45% 6px, 50% 16px, 55% 4px, 60% 15px, 65% 3px, 70% 17px, 75% 5px, 80% 12px, 85% 2px, 90% 16px, 95% 4px, 100% 15px, 100% 100%, 0% 100%);
+}
+
+.brush-edge-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 95% calc(100% - 3px), 90% calc(100% - 14px), 85% calc(100% - 5px), 80% calc(100% - 12px), 75% calc(100% - 2px), 70% calc(100% - 16px), 65% calc(100% - 4px), 60% calc(100% - 15px), 55% calc(100% - 3px), 50% calc(100% - 17px), 45% calc(100% - 5px), 40% calc(100% - 12px), 35% calc(100% - 2px), 30% calc(100% - 16px), 25% calc(100% - 4px), 20% calc(100% - 14px), 15% calc(100% - 3px), 10% calc(100% - 18px), 5% calc(100% - 5px), 0 calc(100% - 15px));
+}
+
+.torn-paper {
+  position: relative;
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dfcb9f;
+}
+
